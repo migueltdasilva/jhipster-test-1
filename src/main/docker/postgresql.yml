@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jhipstertest1-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/jhipsterTest1/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jhipsterTest1
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
